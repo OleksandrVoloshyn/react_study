@@ -1,0 +1,1 @@
+export const getAllComments = () => fetch('https://jsonplaceholder.typicode.com/comments').then(value => value.json())
