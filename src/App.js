@@ -13,7 +13,7 @@ function App() {
     return (
         <div>
             <div className={styles.user_header}>
-                <Users setUser={setUser}/>
+                <Users setUser={setUser} setPosts={setPosts}/>
                 {user && <UserInfo user={user} getPostByUserId={getPostByUserId}/>}
             </div>
             {posts && <Posts posts={posts}/>}

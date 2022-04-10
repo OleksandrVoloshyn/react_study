@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {usersService} from "../../services";
 import {User} from "../User/User";
 
-const Users = ({setUser}) => {
+const Users = ({setUser, setPosts}) => {
     const [users, setUsers] = useState(null);
 
     useEffect(() => {
@@ -13,7 +13,7 @@ const Users = ({setUser}) => {
     return (
         <div>
             {users
-                ? users.map(user => <User key={user.id} user={user} setUser={setUser}/>)
+                ? users.map(user => <User key={user.id} user={user} setUser={setUser} setPosts={setPosts}/>)
                 : 'Loading...'
             }
         </div>
