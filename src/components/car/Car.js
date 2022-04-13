@@ -8,7 +8,6 @@ const Car = ({car, setCarForUpdate,setDeletedCarId}) => {
         await carService.deleteById(id)
         setDeletedCarId(id)
     }
-
     return (
         <div>
             <br/>
