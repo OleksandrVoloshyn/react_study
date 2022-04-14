@@ -3,7 +3,7 @@ import {joiResolver} from "@hookform/resolvers/joi";
 import {useForm} from "react-hook-form";
 
 import {carService} from "../../services";
-import {carValidator} from "../validators";
+import {carValidator} from "../../validators";
 
 const CarForm = ({setNewCar, carForUpdate}) => {
     const {register, reset, handleSubmit, formState: {errors}, setValue} = useForm({
