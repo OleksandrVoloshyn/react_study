@@ -1,11 +1,14 @@
-import './App.css';
-import {useReducer} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {Users} from "./components/Users";
+import {Posts} from "./components/Posts";
 
 function App() {
-    useReducer()
+
     return (
-        <div className="App">
-            test
+        <div>
+            <Users/>
+            <hr/>
+            <Posts/>
         </div>
     );
 }
