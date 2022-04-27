@@ -1,7 +1,17 @@
+import {Cats, CatsForm, Dogs, DogsForm} from "./components";
+
 function App() {
     return (
-        <div className="App">
-            test
+        <div>
+            <div style={{display: 'flex', justifyContent: "space-around"}}>
+                <CatsForm/>
+                <DogsForm/>
+            </div>
+            <hr/>
+            <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                <Cats/>
+                <Dogs/>
+            </div>
         </div>
     );
 }
