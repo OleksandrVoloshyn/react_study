@@ -1,0 +1,12 @@
+.episode {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+}
+.episode:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
